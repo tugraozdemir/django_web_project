@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+<div  style="margin-top : 100px;" class="text-center">
+    <h1 class="display-4">Welcome to My Website!</h1>
+    <p class="lead">This is a simple hero unit, a jumbotron-style component for calling extra attention to featured content or information.</p>
+
+</div>
+<ul>
+
+{% for number in numbers %} 
+
+        <li>{{number}}</li>
+{% endfor %}
+</ul>
+{% endblock body %}
